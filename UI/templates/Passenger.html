@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href = "css/signup.css" rel = "stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/index.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/signup.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/tasks.css" />
+    <script lang="javascript"></script>
+    <title>Passenger</title>
+</head>
+<body>  
+        <div class="topnav">
+                <p>Ride My way</p>
+            </div>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn">View my profile</button> 
+        <!...modal form displaying a passenger's profile...!>
+        <div id="id01" class="modal">
+            <div class="view">
+              <b>My Profile</b><hr/>
+
+              <div class="card">
+                <br>
+                  <p><b>Number of rides taken: </b></p>
+                  <br>
+                  <p>88</p>
+                  <hr/>
+
+                </div>
+                <b>My profile details</b><hr/>
+                      <div class="card">
+                        <p>Date: 24.5.2018</p>
+                        <p>Car number plate: UAX 327V</p> 
+                        <p>Stage : City square</p> 
+                        <p>Departure time: 12.45pm</p> 
+                        <p>Destination: Mukono</p>
+                        <p>Via: Nakawa-kireka-Banda<p/>
+                        <p>Price: 15000</p>
+                        <hr/>
+                      </div>
+                    
+                    <div class="card">
+                        <p>Date: 20.5.2018</p>
+                        <p>Car number plate: UBA 117X</p> 
+                        <p>Stage : Namboole</p> 
+                        <p>Departure time: 10.00pm</p> 
+                        <p>Destination: Wandegeya</p>
+                        <p>Via: Kireka-Banda-Nakawa-Lugogo<p/>
+                        <p>Price: 18000</p>
+                        <hr/>
+
+                          </div>
+                    <div class="card">
+                          <p>Date: 12.5.2018</p>
+                          <p>Car number plate: UAD 203Y</p> 
+                          <p>Stage : Ntinda</p> 
+                          <p>Departure time: 11.45am</p> 
+                          <p>Destination: Kampala</p>
+                          <p>Via: Bukotoa-kamokya-Wandegeya<p/>
+                          <p>Price: 22000</p>
+                          <hr/>
+                    </div>
+                    
+                        </div>
+          </div>
+
+        
+        <script>
+        // Get the modal form for requesting for a ride
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+        <div class="view">
+            <b>View available requests</b></b><hr/>
+                  
+                <div class="card">
+                      <p>Car number plate: UAX 327V</p> 
+                      <p>Stage : City square</p> 
+                      <p>Departure time: 12.45pm</p> 
+                      <p>Destination: Mukono</p>
+                      <p>Via: Nakawa-kireka-Banda<p/>
+                      <p>Price: 15000</p>
+                      <hr/>
+                      <button>
+                          <i class="fa fa-accept"> <b>Send a Request</b></i>
+                      </button>
+                </div><br>
+                  
+                <div class="card">
+                      <p>Car number plate: UBA 117X</p> 
+                      <p>Stage : Namboole</p> 
+                      <p>Departure time: 10.00pm</p> 
+                      <p>Destination: Wandegeya</p>
+                      <p>Via: Kireka-Banda-Nakawa-Lugogo<p/>
+                      <p>Price: 18000</p>
+                      <hr/>
+                      <button>
+                          <i class="fa fa-accept"> <b>Send a Request</b></i>
+                      </button>
+                </div><br>
+
+                <div class="card">
+                      <p>Car number plate: UAD 203Y</p> 
+                      <p>Stage : Ntinda</p> 
+                      <p>Departure time: 11.45am</p> 
+                      <p>Destination: Kampala</p>
+                      <p>Via: Bukotoa-kamokya-Wandegeya<p/>
+                      <p>Price: 22000</p>
+                        <hr/>
+                        <button>
+                            <i class="fa fa-accept"><b>Send a Request</b></i>
+                        </button><br>
+                </div>
+                  
+        </div>
+
+</body>
+</html>
